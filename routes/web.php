@@ -19,15 +19,31 @@ Route::get('/', [
     'as' => 'home',
 ]);
 
-/* Authentication */
-
 Route::get('/signup', [
    'uses' => '\App\Http\Controllers\AuthController@getSignup',
    'as' => 'auth.signup',
+    'middleware' => ['guest'],
 ]);
 
 Route::post('/signup', [
     'uses' => '\App\Http\Controllers\AuthController@postSignup',
+    'middleware' => ['guest'],
+]);
+
+Route::get('/signin', [
+    'uses' => '\App\Http\Controllers\AuthController@getSignin',
+    'as' => 'auth.signin',
+    'middleware' => ['guest'],
+]);
+
+Route::post('/signin', [
+    'uses' => '\App\Http\Controllers\AuthController@postSignin',
+    'middleware' => ['guest'],
+]);
+
+Route::get('/signout', [
+    'uses' => '\App\Http\Controllers\AuthController@getSignout',
+    'as' => 'auth.signout',
 ]);
 
 /* Test for alerts */

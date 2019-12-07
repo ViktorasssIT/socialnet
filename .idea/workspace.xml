@@ -151,7 +151,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575548844147</updated>
       <workItem from="1575548850593" duration="5747000" />
-      <workItem from="1575711823906" duration="4039000" />
+      <workItem from="1575711823906" duration="14667000" />
     </task>
     <servers />
   </component>
@@ -159,6 +159,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2109" y="467" width="424" height="144" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1575719618595">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2109" y="467" width="424" height="144" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575719618595" />
     <state x="1815" y="174" key="SettingsEditor" timestamp="1575548930490">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -168,9 +172,9 @@
     </state>
     <state x="1982" y="366" key="com.intellij.ide.util.TipDialog/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575548849784" />
     <state x="484" y="278" key="com.intellij.ide.util.TipDialog/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1575711825072" />
-    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1575556276456">
+    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1575729661774">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575556276456" />
+    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575729661774" />
   </component>
 </project>
