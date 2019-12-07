@@ -46,8 +46,17 @@ Route::get('/signout', [
     'as' => 'auth.signout',
 ]);
 
-/* Test for alerts */
+/* Search */
 
-Route::get('/alert', function () {
-   return redirect()->route('home')->with('info', 'You have signed up!');
-});
+Route::get('/search', [
+   'uses' => '\App\Http\Controllers\SearchController@getResults',
+   'as' => 'search.results',
+]);
+
+
+
+///* Test for alerts */
+//
+//Route::get('/alert', function () {
+//   return redirect()->route('home')->with('info', 'You have signed up!');
+//});
