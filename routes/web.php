@@ -75,7 +75,19 @@ Route::post('/profile/edit', [
 
 Route::get('/friends', [
     'uses' => '\App\Http\Controllers\FriendController@getIndex',
-    'as' => 'friend.index',
+    'as' => 'friends.index',
+    'middleware' => ['auth'],
+]);
+
+Route::get('/friends/add/{username}', [
+    'uses' => '\App\Http\Controllers\FriendController@getAdd',
+    'as' => 'friends.add',
+    'middleware' => ['auth'],
+]);
+
+Route::get('/friends/accept/{username}', [
+    'uses' => '\App\Http\Controllers\FriendController@getAccept',
+    'as' => 'friends.accept',
     'middleware' => ['auth'],
 ]);
 
