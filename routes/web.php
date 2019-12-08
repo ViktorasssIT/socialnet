@@ -53,6 +53,25 @@ Route::get('/search', [
    'as' => 'search.results',
 ]);
 
+/* User profile */
+
+Route::get('/user/{username}', [
+    'uses' => '\App\Http\Controllers\ProfileController@getProfile',
+    'as' => 'profile.index',
+]);
+
+Route::get('/profile/edit', [
+    'uses' => '\App\Http\Controllers\ProfileController@getEdit',
+    'as' => 'profile.edit',
+    'middleware' => ['auth'],
+]);
+
+Route::post('/profile/edit', [
+    'uses' => '\App\Http\Controllers\ProfileController@postEdit',
+    'as' => 'profile.edit',
+    'middleware' => ['auth'],
+]);
+
 
 
 ///* Test for alerts */
