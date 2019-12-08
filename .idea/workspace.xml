@@ -4,8 +4,9 @@
     <list default="true" id="99480487-7ef2-42bf-9792-2309da5b86f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_08_112955_create_friends_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_08_112955_create_friends_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/templates/partials/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/partials/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/partials/userblock.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/partials/userblock.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +19,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -162,7 +177,7 @@
       <workItem from="1575548850593" duration="5747000" />
       <workItem from="1575711823906" duration="17404000" />
       <workItem from="1575738153019" duration="3067000" />
-      <workItem from="1575800574037" duration="2661000" />
+      <workItem from="1575800574037" duration="6513000" />
     </task>
     <servers />
   </component>
@@ -183,9 +198,9 @@
     </state>
     <state x="1982" y="366" key="com.intellij.ide.util.TipDialog/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575800574012" />
     <state x="484" y="278" key="com.intellij.ide.util.TipDialog/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1575738345496" />
-    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1575804156614">
+    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1575806864694">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575804156614" />
+    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575806864694" />
   </component>
 </project>

@@ -68,11 +68,16 @@ Route::get('/profile/edit', [
 
 Route::post('/profile/edit', [
     'uses' => '\App\Http\Controllers\ProfileController@postEdit',
-    'as' => 'profile.edit',
     'middleware' => ['auth'],
 ]);
 
+/* Friends rutes */
 
+Route::get('/friends', [
+    'uses' => '\App\Http\Controllers\FriendController@getIndex',
+    'as' => 'friend.index',
+    'middleware' => ['auth'],
+]);
 
 ///* Test for alerts */
 //
