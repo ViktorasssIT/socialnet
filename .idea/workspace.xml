@@ -4,7 +4,10 @@
     <list default="true" id="99480487-7ef2-42bf-9792-2309da5b86f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StatusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StatusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Status.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/timeline/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/timeline/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +179,7 @@
       <workItem from="1575711823906" duration="17404000" />
       <workItem from="1575738153019" duration="3067000" />
       <workItem from="1575800574037" duration="13163000" />
-      <workItem from="1575893021702" duration="7264000" />
+      <workItem from="1575893021702" duration="11872000" />
     </task>
     <servers />
   </component>
@@ -201,9 +204,9 @@
     </state>
     <state x="1982" y="366" key="com.intellij.ide.util.TipDialog/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575893063610" />
     <state x="484" y="278" key="com.intellij.ide.util.TipDialog/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1575738345496" />
-    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1575899444365">
+    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1575906584508">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575899444365" />
+    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1575906584508" />
   </component>
 </project>
