@@ -91,8 +91,10 @@ Route::get('/friends/accept/{username}', [
     'middleware' => ['auth'],
 ]);
 
-///* Test for alerts */
-//
-//Route::get('/alert', function () {
-//   return redirect()->route('home')->with('info', 'You have signed up!');
-//});
+/* Statuses */
+
+Route::post('/status', [
+    'uses' => '\App\Http\Controllers\StatusController@postStatus',
+    'as' => 'status.post',
+    'middleware' => ['auth'],
+]);
