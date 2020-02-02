@@ -13,7 +13,7 @@
                     <div class="media">
 
                         <a class="pull-left" href="{{ route('profile.index', ['username' => $status->user->username]) }}">
-                            <img class="media-object" alt="{{ $status->user->getNameOrUsername() }}"
+                            <img class="media-object mr-2" alt="{{ $status->user->getNameOrUsername() }}"
                                  src="{{ $status->user->getAvatarUrl() }}">
                         </a>
 
@@ -32,7 +32,7 @@
                             @foreach($status->replies as $reply)
                                 <div class="media">
                                     <a class="pull-left" href="{{ route('profile.index', ['username' => $reply->user->username]) }}">
-                                        <img class="media-object" alt="{{ $reply->user->getNameOrUsername() }}"
+                                        <img class="media-object mr-2" alt="{{ $reply->user->getNameOrUsername() }}"
                                              src="{{ $reply->user->getAvatarUrl() }}">
                                     </a>
                                     <div class="media-body">
@@ -58,11 +58,11 @@
                                                   placeholder="Reply to this status"></textarea>
                                     @if ($errors->has("reply-{$status->id}"))
 
-                                        <span class="help-block">{{ $errors->first("reply-{$status->id}") }}</span>
+                                        <span class="alert alert-info">{{ $errors->first("reply-{$status->id}") }}</span>
 
                                     @endif
                                 </div>
-                                <input type="submit" value="Reply" class="btn btn-default btn-sm">
+                                <input type="submit" value="Reply" class="btn btn-primary">
                             </form>
                                 @endif
 
@@ -72,7 +72,7 @@
             @endif
 
         </div>
-        <div class="col-lg-4 col-lg-offset-3">
+        <div class="col-lg-4 offset-lg-3">
             @if (Auth::user()->hasFriendRequestPending($user))
                     <p>Waiting for {{ $user->getNameOrUsername() }} to accept your request.</p>
                 @elseif (Auth::user()->hasFriendRequestReceived($user))
@@ -81,7 +81,7 @@
                     <p>You and {{ $user->getNameOrUsername() }} are friends.</p>
 
                     <form action="{{ route('friends.delete', ['username' => $user->username]) }}" method="post">
-                        <input type="submit" value="Delete friend" class="btn btn-primary">
+                        <input type="submit" value="Delete friend" class="btn btn-primary mb-2">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     </form>
 

@@ -9,12 +9,12 @@
                 <div class="form-group{{ $errors->has('status') ? ' has-error' : '' }}">
 
                     <textarea placeholder="What's up {{ Auth::user()->getFirstNameOrUsername() }}?"
-                              name="status" class="form-control" rows="2"></textarea>
+                              name="status" class="form-control rounded-0" rows="2"></textarea>
 
-                    <button type="submit" class="btn btn-default">Update status</button>
+                    <button type="submit" class="btn btn-primary mt-1">Update status</button>
 
                     @if ($errors->has('status'))
-                        <span class="help-block">{{ $errors->first('status') }}
+                        <span class="alert alert-danger">{{ $errors->first('status') }}
                         </span>
                         @endif
 
@@ -33,7 +33,7 @@
                         <div class="media">
 
                             <a class="pull-left" href="{{ route('profile.index', ['username' => $status->user->username]) }}">
-                                <img class="media-object" alt="{{ $status->user->getNameOrUsername() }}"
+                                <img class="mr-2 media-object" alt="{{ $status->user->getNameOrUsername() }}"
                                      src="{{ $status->user->getAvatarUrl() }}">
                             </a>
 
@@ -52,7 +52,7 @@
                                 @foreach($status->replies as $reply)
                                     <div class="media">
                                         <a class="pull-left" href="{{ route('profile.index', ['username' => $reply->user->username]) }}">
-                                            <img class="media-object" alt="{{ $reply->user->getNameOrUsername() }}"
+                                            <img class="media-object mr-2" alt="{{ $reply->user->getNameOrUsername() }}"
                                                  src="{{ $reply->user->getAvatarUrl() }}">
                                         </a>
                                         <div class="media-body">
@@ -77,11 +77,11 @@
                                                   placeholder="Reply to this status"></textarea>
                                         @if ($errors->has("reply-{$status->id}"))
 
-                                            <span class="help-block">{{ $errors->first("reply-{$status->id}") }}</span>
+                                            <span class="alert alert-info">{{ $errors->first("reply-{$status->id}") }}</span>
 
                                             @endif
                                     </div>
-                                    <input type="submit" value="Reply" class="btn btn-default btn-sm">
+                                    <input type="submit" value="Reply" class="btn btn-primary btn-sm mb-3">
                                 </form>
 
 

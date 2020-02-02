@@ -9,14 +9,14 @@
                     <label for="email" class="control-label">Email</label>
                     <input type="text" name="email" class="form-control" id="email">
                     @if ($errors->has('email'))
-                        <span class="help-block">{{ $errors->first('email') }}</span>
+                        <span class="alert alert-danger">{{ $errors->first('email') }}</span>
                         @endif
                 </div>
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                     <label for="password" class="control-label">Password</label>
                     <input type="password" name="password" class="form-control" id="password">
                     @if ($errors->has('password'))
-                        <span class="help-block">{{ $errors->first('password') }}</span>
+                        <span class="alert alert-danger">{{ $errors->first('password') }}</span>
                     @endif
                 </div>
                 <div class="checkbox">
@@ -25,7 +25,7 @@
                     </label>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-default">Sign in</button>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
                 </div>
                 <input type="hidden" name="_token" value="{{ Session::token() }}">
             </form>

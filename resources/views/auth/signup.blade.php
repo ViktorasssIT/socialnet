@@ -10,7 +10,7 @@
                     </label>
                     <input class="form-control" type="text" name="email" id="email" value="{{ Request::old('email') ?: '' }}">
                     @if ($errors->has('email'))
-                        <span class="help-block">{{ $errors->first('email') }}</span>
+                        <span class="alert alert-danger">{{ $errors->first('email') }}</span>
                         @endif
                 </div>
                 <div class="form-group{{ $errors->has('username') ? ' has-error' : ''}}">
@@ -19,7 +19,7 @@
                     <input class="form-control" type="text" name="username" id="username"
                            value="{{ Request::old('username') ?: '' }}">
                     @if ($errors->has('username'))
-                        <span class="help-block">{{ $errors->first('username') }}</span>
+                        <span class="alert alert-danger">{{ $errors->first('username') }}</span>
                     @endif
                 </div>
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : ''}}">
@@ -27,11 +27,11 @@
                     </label>
                     <input class="form-control" type="password" name="password" id="password">
                     @if ($errors->has('password'))
-                        <span class="help-block">{{ $errors->first('password') }}</span>
+                        <span class="alert alert-danger">{{ $errors->first('password') }}</span>
                     @endif
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-default" type="submit">Sign up</button>
+                    <button class="btn btn-primary" type="submit">Sign up</button>
                 </div>
                 <input type="hidden" name="_token" value="{{ Session::token() }}">
 

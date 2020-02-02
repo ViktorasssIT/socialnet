@@ -1,30 +1,33 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg mb-5 d-flex" role="navigation">
     <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="{{ route('home') }}">Social Network</a>
-        </div>
 
-        <div class="collapse navbar-collapse">
+            <a class="navbar-brand" href="{{ route('home') }}">Socialize</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             @if (Auth::check())
-            <ul class="nav navbar-nav">
-                <li><a href="{{ route('home') }}">Timeline</a></li>
-                <li><a href="{{ route('friends.index') }}">Friends</a></li>
+            <ul class="navbar-nav mr-3">
+                <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Timeline</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('friends.index') }}">Friends</a></li>
             </ul>
-            <form class="navbar-form navbar-left" role="search" action="{{ route('search.results') }}">
+            <form class="form-inline" role="search" action="{{ route('search.results') }}">
                 <div class="form-group">
                     <input type="text" name="query" class="form-control" placeholder="Find people">
                 </div>
-                <button type="submit" class="btn btn-default">Search</button>
+                <button type="submit" class="btn btn-outline-info">Search</button>
             </form>
             @endif
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="navbar-nav">
                 @if (Auth::check())
-                <li><a href="{{ route('profile.index', ['username' => Auth::user()->username]) }}">{{ Auth::user()->getNameOrUsername() }}</a></li>
-                <li><a href="{{ route('profile.edit') }}">Update profile</a></li>
-                <li><a href="{{ route('auth.signout') }}">Sign out</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('profile.index', ['username' => Auth::user()->username]) }}">{{ Auth::user()->getNameOrUsername() }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('profile.edit') }}">Update profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('auth.signout') }}">Sign out</a></li>
                 @else
-                <li><a href="{{ route('auth.signup') }}">Sign up</a></li>
-                <li><a href="{{ route('auth.signin') }}">Sign in</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('auth.signup') }}">Sign up</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('auth.signin') }}">Sign in</a></li>
                 @endif
             </ul>
         </div>
